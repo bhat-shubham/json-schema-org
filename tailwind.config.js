@@ -1,3 +1,5 @@
+const { default: daisyui } = require("daisyui");
+
 module.exports = {
   mode: 'jit', // Enable JIT mode
   content: [
@@ -76,7 +78,10 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [daisyui],
+  daisyui: {
+    themes: false,
+  },
 };
 
 /*

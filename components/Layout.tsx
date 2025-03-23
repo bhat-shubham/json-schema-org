@@ -70,7 +70,7 @@ export default function Layout({
 
   const newTitle = `JSON Schema${metaTitle ? ` - ${metaTitle}` : ''}`;
   return (
-    <div className='min-h-screen relative flex flex-col justify-between '>
+    <div className='min-h-screen relative flex flex-col justify-between'>
       <FaviconHead />
       <script
         defer
@@ -85,11 +85,11 @@ export default function Layout({
           content='width=device-width, initial-scale=1, maximum-scale=1'
         ></meta>
       </Head>
-      <div className={classnames({ 'bg-white': whiteBg })}>
+      <div className={classnames('w-full', { 'bg-white': whiteBg })}>
         <main
           className={classnames(
             mainClassName,
-            'z-10 h-screen xl:rounded-xl pt-4 mx-auto',
+            'z-10 w-full',
             // 'z-10 h-screen  xl:rounded-xl pt-4 mx-auto',
           )}
         >

@@ -1,4 +1,4 @@
-const { default: daisyui } = require("daisyui");
+import daisyui from 'daisyui';
 
 module.exports = {
   mode: 'jit', // Enable JIT mode
@@ -78,7 +78,7 @@ module.exports = {
       },
     },
   },
-  plugins: [daisyui],
+  plugins: [require('daisyui')],
   daisyui: {
     themes: false,
   },
